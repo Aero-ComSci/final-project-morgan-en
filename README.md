@@ -5,7 +5,8 @@ SS':
 ![image](https://github.com/user-attachments/assets/e473a381-f4f7-4aee-b161-566d0b76ce1d)
 ![image](https://github.com/user-attachments/assets/b2c430f9-db45-4f73-b15c-b254972e2e59)
 
-```python def AskActivity():
+```python
+def AskActivity():
     y = "Hello! What activity would you like to add?"
     try:
         a = input(y)
@@ -30,5 +31,6 @@ SS':
     print(Activity1) ```
 ```python for i in activity_list:
     print(i) ```
-```python NZLTicket = Activity("New_Zealand_Ticket(s)", 2, 25, 1000) 
-AUSTicket = Activity("Australia_Ticket(s)", 3, 30, 950) ```
+```NZLTicket = Activity("New_Zealand_Ticket(s)", 2, 25, 1000) 
+AUSTicket = Activity("Australia_Ticket(s)", 3, 30, 950)
+activity_list = [NZLTicket, AUSTicket]```
