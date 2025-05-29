@@ -1,0 +1,45 @@
+class Activity:
+
+    def __init__(self, name, amount, tax, cost):
+            self.name = name
+            self.amount = amount
+            self.tax = tax 
+            self.cost = cost 
+            
+
+        
+    def __str__(self):
+        if self.amount > 0 and self.tax > 0 and self.cost > 0:
+            return self.name + ": " + f"{(self.amount*self.cost+((self.tax/100)*self.amount*self.cost)):.2f}"
+
+NZLTicket = Activity("New_Zealand_Ticket(s)", 2, 25, 1000) 
+AUSTicket = Activity("Australia_Ticket(s)", 3, 30, 950)
+activity_list = [NZLTicket, AUSTicket]
+print(activity_list)
+for i in activity_list:
+    print(i)
+
+def AskActivity():
+    y = "Hello! What activity would you like to add?"
+    try:
+        a = input(y)
+    except:
+        a = input(y)
+    y1 = "How many or much of this activity would you like to perform?"
+    try:
+        b = input(y1)
+    except:
+        b = input(y1)
+    y2 = "What is the tax on this/these item(s)?"
+    try:
+        c = input(y2)
+    except:
+        c = input(y2)
+    y3 = "What is the cost of this/these item(s)?"
+    try:
+        d = input(y3)
+    except:
+        d = input(y3)
+    Activity1 = Activity(str(a), int(b), int(c), int(d))
+    print(Activity1)
+AskActivity()
