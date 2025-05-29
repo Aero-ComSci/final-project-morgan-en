@@ -2,3 +2,7 @@
 1. This program is for anyone who would like to quickly calculate the cost of any of their summertime activities.
 2. My program asks the tax, amount, and cost of the individual activity that the user wants and then outputs the combined total cost.
 
+SS':
+![image](https://github.com/user-attachments/assets/e473a381-f4f7-4aee-b161-566d0b76ce1d)
+![Uploading image.png…]()
+
